@@ -139,11 +139,7 @@ if (entradaDatos == 1) {
 
   let pedido = parseInt(
     prompt(
-<<<<<<< HEAD
-      "Seleccionar 1 = DOBLE CUARTO || Seleccionar 2 = CHEESE BURGUER || Seleccionar 3 = MEGA BACON $1190;00"
-=======
       "Seleccionar 1 = DOBLE CUARTO |1 Seleccionar 2 = CHEESE BURGER || Seleccionar 3 = MEGA BACON $1190;00"
->>>>>>> rama1
     )
   );
 
