@@ -49,7 +49,7 @@ function totalAPagarFinal(mediodepago) {
 
 //******************************************** Declaracion de Clases *************************
 class Combos {
-  constructor(nombre, cantIngredientes, tamaño, cantItemTotalxCombo) {
+  Combos(nombre, cantIngredientes, tamaño, cantItemTotalxCombo) {
     this.nombre = nombre.toUpperCase();
     this.cantIngredientes = cantIngredientes;
     this.tamaño = tamaño;
@@ -57,38 +57,34 @@ class Combos {
   }
 }
 
-const comboDobleCuarto = new Combos("Doble cuarto", 5, "pequeña", 7);
-// function combo1() {
-//   alert("Combo1 " + comboDobleCuarto);
-// }
-
 //******************************************** Declaración de Objetos ****************
-// Combo 1
-const combo1 = {
-  nombre: "",
+// Combo 1 Doble cuarto
+const combo1 = new Combos({
+  nombre: "Doble cuarto",
   cantIngredientes: 5,
-  tamaño: "",
+  tamaño: "Mediana",
   cantItemTotalxCombo: 7,
-};
+});
+console.log(combo1.nombre);
 
-// Combo 2
-const combo2 = {
-  nombre: "",
+// Combo 2 Cheese burger
+const combo2 = new Combos({
+  nombre: "Cheese burger",
   cantIngredientes: 7,
-  tamaño: "",
+  tamaño: "Mediana",
   cantItemTotalxCombo: 9,
-};
+});
 
-// Combo 3
-const combo3 = {
-  nombre: "",
+// Combo 3 Mega bacon
+const combo3 = new Combos({
+  nombre: "Doble cuarto",
   cantIngredientes: 8,
-  tamaño: "",
+  tamaño: "Grande",
   cantItemTotalxCombo: 10,
-};
+});
 
 //******************************************** Declaración de Arrays ******************
-// Combo1
+// Combo1 Doble cuarto
 //Ingredientes Combo1 Doble hamburguesa con queso cheddar, barbacoa, pepino y cebolla. Acompañada con papas fritas y gaseosa a elección chica
 const arrayCombo1ingredientes = [
   "Doble de hamburguesas",
@@ -100,7 +96,7 @@ const arrayCombo1ingredientes = [
   " gaseosa chica",
 ];
 
-// Combo2
+// Combo2 Chesse burger
 //Ingredientes Doble hamburguesa con extra queso cheddar,  barbacoa, pepino, cebolla caramelizada, salsa big eme y lechuga rallada. Acompañada con papas fritas y gaseosa a elección chica
 const arrayCombo2ingredientes = [
   "Doble de hamburguesas",
@@ -114,7 +110,7 @@ const arrayCombo2ingredientes = [
   " gaseosa chica",
 ];
 
-// Combo3
+// Combo3 Mega bacon
 //Ingredientea Doble hamburguesa con extra queso cheddar, bacon,  barbacoa, pepino, cebolla caramelizada, salsa big eme y lechuga rallada. Acompañada con papas fritas y gaseosa a elección chica
 const arrayCombo3ingredientes = [
   " Doble de hamburguesas",
@@ -130,11 +126,11 @@ const arrayCombo3ingredientes = [
 
 // ******************************************** COMIENZO DE ALGORITMO     *****************
 
-alert("Bienvenido a la casa de la Hamburguesas. 🍔🍟🍿🥤");
-let nombre1 = prompt("Por favor ingrese su nombre:");
+// alert("Bienvenido a la casa de la Hamburguesas. 🍔🍟🍿🥤");
+// let nombre1 = prompt("Por favor ingrese su nombre:");
 
-saludar();
-let entradaDatos = prompt("¿Estas listo para ordenar? Si = 1 - Cancelar = 2");
+// saludar();
+// let entradaDatos = prompt("¿Estas listo para ordenar? Si = 1 - Cancelar = 2");
 
 if (entradaDatos == 1) {
   alert("Te mostramos nuestra carta disponible");
@@ -144,7 +140,7 @@ if (entradaDatos == 1) {
 
   let pedido = parseInt(
     prompt(
-      "Seleccionar 1 = DOBLE CUARTO |1 Seleccionar 2 = CHEESE BURGUER || Seleccionar 3 = MEGA BACON $1190;00"
+      "Seleccionar 1 = DOBLE CUARTO |1 Seleccionar 2 = CHEESE BURGER || Seleccionar 3 = MEGA BACON $1190;00"
     )
   );
 
@@ -210,7 +206,7 @@ if (entradaDatos == 1) {
     if (agregar == 1) {
       pedido = parseInt(
         prompt(
-          "Seleccionar 1 = DOBLE CUARTO |1 Seleccionar 2 = CHEESE BURGUER || Seleccionar 3 = MEGA BACON $1190;00"
+          "Seleccionar 1 = DOBLE CUARTO |1 Seleccionar 2 = CHEESE BURGER || Seleccionar 3 = MEGA BACON $1190;00"
         )
       );
     } else {
