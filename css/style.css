@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.estilo_cabecera {
+  background: black;
+  color: yellow;
+  height: 150px;
+  text-align: center;
+}
+main {
+  background: yellow;
+  color: red;
+  text-align: center;
+}
+.fotos_carousel {
+  height: 600px;
+}
