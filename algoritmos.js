@@ -65,6 +65,7 @@ const combo1 = new Combos({
   tamaño: "Mediana",
   cantItemTotalxCombo: 7,
 });
+console.log(combo1);
 
 // Combo 2 Cheese burger
 const combo2 = new Combos({
@@ -110,7 +111,7 @@ const arrayCombo2ingredientes = [
 ];
 
 // Combo3 Mega bacon
-//Ingredientea Doble hamburguesa con extra queso cheddar, bacon,  barbacoa, pepino, cebolla caramelizada, salsa big eme y lechuga rallada. Acompañada con papas fritas y gaseosa a elección chica
+//Ingredientes Doble hamburguesa con extra queso cheddar, bacon,  barbacoa, pepino, cebolla caramelizada, salsa big eme y lechuga rallada. Acompañada con papas fritas y gaseosa a elección chica
 const arrayCombo3ingredientes = [
   " Doble de hamburguesas",
   " bacon",
@@ -125,11 +126,11 @@ const arrayCombo3ingredientes = [
 
 // ******************************************** COMIENZO DE ALGORITMO     *****************
 
-alert("Bienvenido a la casa de la Hamburguesas. 🍔🍟🍿🥤");
-let nombre1 = prompt("Por favor ingrese su nombre:");
+// alert("Bienvenido a la casa de la Hamburguesas. 🍔🍟🍿🥤");
+// let nombre1 = prompt("Por favor ingrese su nombre:");
 
-saludar();
-let entradaDatos = prompt("¿Estas listo para ordenar? Si = 1 - Cancelar = 2");
+// saludar();
+// let entradaDatos = prompt("¿Estas listo para ordenar? Si = 1 - Cancelar = 2");
 
 if (entradaDatos == 1) {
   alert("Te mostramos nuestra carta disponible");
