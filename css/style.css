@@ -3,12 +3,51 @@
   margin: 0;
   box-sizing: border-box;
 }
-.estilo_cabecera {
-  background: black;
-  color: yellow;
-  height: 150px;
-  text-align: center;
+/* Cabecera */
+header {
+  background: #cc9544;
 }
+.barra_nav {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.barra_nav li {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: yellow;
+  border-radius: 8%;
+  transition: 0.1s;
+}
+.barra_nav li a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.barra_nav li a:hover {
+  color: red;
+}
+.barra_nav li:hover {
+  background: yellow;
+}
+.logo {
+  width: 230px;
+}
+.color_text {
+  color: #b87e24;
+  text-align: center;
+  font-family: "Times";
+  font-size: 22px;
+}
+
 main {
   background: yellow;
   color: red;
@@ -16,4 +55,108 @@ main {
 }
 .fotos_carousel {
   height: 600px;
+}
+/* Sección de cajas para ofertas */
+.promo {
+  padding: 30px 0px 40px 0px;
+}
+
+.seccion-ofertas {
+  background-color: #fff1bd;
+}
+
+.cajas-ofertas {
+  display: flex;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+}
+.cajas-ofertas .ofertas {
+  background: white;
+  color: red;
+  font-family: "Dosis";
+  text-decoration: solid;
+  width: 310px;
+  height: auto;
+  padding: 15px 10px 15px 5px;
+  border-top: solid 2px #362706;
+  border-right: solid 2px #362706;
+  border-bottom: solid 2px #362706;
+  border-left: solid 2px #362706;
+  margin: 5px 10px 15px 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 25px 5px #aa7b14;
+  font-size: 25px;
+}
+.cajas-ofertas .ofertas .foto-ofertas {
+  border-top: solid 1px #362706;
+  border-right: solid 1px #362706;
+  border-bottom: solid 1px #362706;
+  border-left: solid 1px #362706;
+}
+
+s {
+  color: brown;
+}
+
+/* Hover a las cajas - Uso de transformación */
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 50px 0px 25px 0px;
+  background: orange;
+}
+
+.pie-footer {
+  flex-wrap: wrap;
+}
+.pie-footer .caja_footer {
+  padding: 40px 0px 40px 0px;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pie-pagina {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tex-footer {
+  color: black;
+  font-size: 20px;
+  font-family: "Times";
+}
+
+.link-footer {
+  color: #362706;
+  font-size: 20px;
+}
+
+/* **************************Seccion Page de Contacto************************************************ */
+
+.seccion_contacto {
+  font-size: 20px;
+  padding: 60px 60px;
+  background-size: cover;
+  font-size: 22px;
+  font-weight: 500;
+  color: red;
+  font-family: "Times";
+}
+.page_contac {
+  padding: 10px 0px 20px 0px;
+}
+/* Placeholder que el usuario debe completar */
+.Ingreso_info {
+  font-size: 20px;
 }

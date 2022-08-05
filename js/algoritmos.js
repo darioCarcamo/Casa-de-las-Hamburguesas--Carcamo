@@ -242,3 +242,16 @@ if (entradaDatos == 1) {
   entradaDatos == 2;
   console.log("Se cancelo la orden " + nombre1 + ", te esperamos pronto!");
 }
+
+// Seccion de Contacto
+function datosformulario() {
+  var nombre_cliente = document.getElementById("nombre_contacto").value;
+  var correo_electronico_cliente =
+    document.getElementById("correo_electronico").value;
+  var telefono_cliente = document.getElementById("telefono").value;
+  var comentario_cliente = document.getElementById("comentario").value;
+  console.log(nombre_cliente);
+  console.log(correo_electronico_cliente);
+  console.log(telefono_cliente);
+  console.log(comentario_cliente);
+}
